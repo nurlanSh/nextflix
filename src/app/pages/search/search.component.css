@@ -1,0 +1,11 @@
+button{
+    background-color: #E50914;
+    color: #fff;
+}
+img{
+    width: 100%;
+    cursor: pointer;
+}
+h5,p{
+    color: #fff;
+}

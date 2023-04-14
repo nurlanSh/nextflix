@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Movie';
+  navbg: any;
+
+  @HostListener('document:scroll') scrollover = () => {
+    if(window.pageYOffset > 0){
+      this.navbg = {
+        'background-color': '#000000'
+      }
+    }
+    else{ 
+      this.navbg = {
+      'background-color': 'transparent'
+    }
+    }
+  }
 }
